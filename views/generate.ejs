@@ -1,0 +1,15 @@
+<%- include('header') %>
+    <%- include('nav') %>
+        <h1>here is ur link for local system <a href="<%= short_link %>">
+                <%= short_link %>
+            </a>
+        </h1>
+        <h1>here is ur link for device connected too it... <a href="<%= `http://192.168.29.42:3000/${shortID}` %>">
+                here copy it and send it...
+            </a>
+        </h1>
+        <h1>here is ur command for bash terminal <a href="<%= short_link %>">
+                run <%= shortID %>
+            </a>
+        </h1>
+        <%- include('footer') %>

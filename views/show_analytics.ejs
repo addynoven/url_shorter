@@ -1,0 +1,20 @@
+<%- include('header') %>
+    <%- include('nav') %>
+        <div class="main">
+            <div class="url_link"><a href="<%= sends.url %>">
+                    <%= sends.url %>
+                </a></div>
+            <div class="upper">
+                <h1>total number of clicks <%= sends["number of click"]%>
+                </h1>
+            </div>
+            <div class="lower">
+                <h2>visit History time...</h2>
+                <% sends["visitHistory"].forEach(e=> { %>
+                    <h3>
+                        <%= e %>
+                    </h3>
+                    <% }) %>
+            </div>
+        </div>
+        <%- include('footer') %>
